@@ -1,4 +1,3 @@
-
 seed_color = input("What color is the seed (red, blue, or green)?\n").lower()
     #added a .lower() to so it catches the capitals, not a perfect "fix", obviously
 
