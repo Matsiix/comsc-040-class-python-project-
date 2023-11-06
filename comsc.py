@@ -58,6 +58,3 @@ if seed_color == "green":
             print("Lily")
     else:
         print("Mushroom")
-
-
-
