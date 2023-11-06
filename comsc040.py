@@ -3,12 +3,12 @@ seed_color = input("What color is the seed (red, blue, or green)?\n").lower()
 
 #supposed to check if u actually put numbers/letters
 
-if seed_color.isalpha() == True:
+if seed_color.isalpha():
     #checks if it has alphabet characters and not numbers
     if seed_color == "red" or seed_color == "blue" or seed_color =="green":
         soil_moisture = input("Is the soil wet or dry?\n").lower()
         
-        if soil_moisture.isalpha() == True:
+        if soil_moisture.isalpha():
             #checks if it has alphabet characters and not numbers
             if soil_moisture == "wet" or soil_moisture == "dry":
                 try:
@@ -31,7 +31,7 @@ if seed_color.isalpha() == True:
         input("Your seed color must be red, blue, or green. Press enter to close.\n")
         quit()
     
-elif seed_color.isalpha() == False:
+elif not seed_color.isalpha():
     #this probably isn't the best solution, but i don't have enough knowledge of oher solutions that would be not so time consuming
     input("Your input for seed color must not contain numbers. Press enter to close.\n")
     quit()
